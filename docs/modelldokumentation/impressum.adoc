@@ -1,0 +1,46 @@
+[discrete]
+=== Impressum
+
+.Erstellung
+[%collapsible]
+====
+[cols="1, 3"]
+|=======
+|Erstelldatum | 2024-01-01
+|letzte Änderung | {docdate}
+| Themen-Nummer | Annn
+| ID nach kGeoiV | --- 
+| Beteiligte | Person 1 (Kürzel 1), Amt 1 + 
+Person 2 (Kürzel 2), Amt 2
+| Status a| - [ ] Entwurf 
+- [ ] bereit für Vernehmlassung
+- [x] gültig
+|=======
+====
+
+.Koreferat
+[%collapsible]
+====
+[cols="20%, 20%, 30%, 30%"]
+|=======
+h| Version h| Datum h| Koreferent h| Prüfstelle
+| 1.0 | 2001-01-01 | xy | Amt A
+|=======
+====
+
+.referenzierte Dokumente
+[%collapsible]
+====
+[cols="10%, 60%, 15%, 15%"]
+|=======
+h| Nr. h| Titel h| Autor(en) h| Version
+| [[doc-01]] [01] | https://www.fedlex.admin.ch/eli/cc/2008/388/de[Bundesgesetz über Geoinformation (GeoIG) (SR 510.62)] | Bund | 05.10.2007
+| [[doc-02]] [02] | https://www.fedlex.admin.ch/eli/cc/2008/389/de[Verordnung über Geoinformation (GeoIV) (SR 510.620)] | Bund | 21.05.2008
+| [[doc-03]] [03] | https://www.sz.ch/public/upload/assets/48275/214_110.pdf?fp=2[kantonales Geoinformationsgesetz (kGeoiG) (SRSZ 214.110)] | Kt. SZ | 24.06.2010
+| [[doc-04]] [04] | https://www.sz.ch/public/upload/assets/5600/214_111.pdf?fp=11[Verordnung zum kantonalen Geoinformationsgesetz (kGeoiV) (SRSZ 214.111)] | Kt. SZ | 18.12.2012
+|=======
+====
+
+ifdef::backend-pdf[]
+<<<
+endif::[]
