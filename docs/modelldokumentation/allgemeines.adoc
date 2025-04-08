@@ -2,7 +2,7 @@
 === Ziel und Zweck
 Dieses Dokument beschreibt den Geobasisdatensatz
  
-* *__<Name des Datensatzes>__.*
+* *__Messstellen Hydrometrie__.*
 
 __<weitere Beschreibungen>__
 
