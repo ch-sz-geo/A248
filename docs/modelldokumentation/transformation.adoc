@@ -1,4 +1,4 @@
-== Modelltransformationen
+== <todo>Modelltransformationen<todo>
 === Transformation vom Bearbeitungsmodell ins Publikationsmodell
 * Quellmodell: https://raw.githubusercontent.com/ch-sz-geo/A064/refs/heads/main/models/SZ_Schutzwald_V1_Bearbeitung.ili[Bearbeitungsmodell "SZ_Schutzwald_V1" (Version: 2025-01-23)]
 * Zielmodell: https://raw.githubusercontent.com/ch-sz-geo/A064/refs/heads/main/models/SZ_Schutzwald_V1.ili[Publikationsmodell verwaltungsintern "SZ_Schutzwald_V1_Bearbeitung" (Version: 2025-01-23)]
