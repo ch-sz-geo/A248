@@ -2,75 +2,6 @@
 === Topic `+Stammdaten+`
 Im Unterschied zum Normalfall führt dieses Thema keine Stammdaten.
 
-==== Klasse `+Katalogeintrag+`
-Die Klasse `+Katalogeintrag+` enthält die allgemeinen, für alle Kataloge gemeinsamen Attribute. Die Klasse selber ist abstrakt: Es gibt keine Objekte +Katalogeintrag+, sondern nur Objekte von den spezialisierten Klassen.
-
-Spaltenbreite Variante 1:
-[cols="10%, 60%, 20%, 10%",options="header"]
-|===
-| Name | Beschreibung | Beispiel | Freigabe
-m| OID
-| technischer Objektidentifikator
-| ceaa37a9-8614-43fc-9a8b-688f95c30218
-| öffentlich
-m| Code
-| Code des Listeneintrages; entspricht in INTERLIS dem Wert der Aufzählung und muss ein gültiger INTERLIS-Name sein (siehe https://www.interlis.ch/dokumentation[INTERLIS-Referenzhandbuch])
-| in_Aenderung
-| öffentlich
-m| Name
-| Bezeichnung des Katalogeintrages, wie er den Nutzenden angezeigt wird
-| in Änderung
-| öffentlich
-m| SortierNr
-| Reihenfolge des Katalogeintrages in der Auswahlliste
-| 1
-| öffentlich
-m| Bemerkung
-| Erläuterung, welche den Katalogeintrag näher beschreibt
-| Dieser Status wird für alle Objekte verwendet, bei denen aktuell eine Nachführung läuft.
-| öffentlich
-|===
-
-Spaltenbreite Variante 2:
-[cols=4*,options="header"]
-|===
-| Name | Beschreibung | Beispiel | Freigabe
-m| OID
-| technischer Objektidentifikator
-| ceaa37a9-8614-43fc-9a8b-688f95c30218
-| öffentlich
-m| Code
-| Code des Listeneintrages; entspricht in INTERLIS dem Wert der Aufzählung und muss ein gültiger INTERLIS-Name sein (siehe https://www.interlis.ch/dokumentation[INTERLIS-Referenzhandbuch])
-| in_Aenderung
-| öffentlich
-m| Name
-| Bezeichnung des Katalogeintrages, wie er den Nutzenden angezeigt wird
-| in Änderung
-| öffentlich
-m| SortierNr
-| Reihenfolge des Katalogeintrages in der Auswahlliste
-| 1
-| öffentlich
-m| Bemerkung
-| Erläuterung, welche den Katalogeintrag näher beschreibt
-| Dieser Status wird für alle Objekte verwendet, bei denen aktuell eine Nachführung läuft.
-| öffentlich
-|===
-
-==== Klasse `+Standard-Katalogeintrag+`
-Die Verbindlichkeit kam mit der Aufnahme der statischen Waldgrenzen in den ÖREB-Kataster. Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`.
-
-[cols=4*,options="header"]
-|===
-| Name | Beschreibung | Beispiel | Freigabe
-4+| _Diese Klasse führt keine zusätzlichen Attribute_
-4+| *Anforderungen*
-m|Code
-3+| Die Werte müssen eindeutig sein
-m|Name
-3+| Die Werte müssen eindeutig sein
-|===
-
 === Topic `+Fachdaten+`
 Das Topic `+Fachdaten+` umfasst die eigentlichen, fachlichen Klassen des Themas.
 
@@ -113,7 +44,7 @@ m| Gewaessername
 | Rigiaa
 | öffentlich
 m| Gewaessernummer
-| kantonale Nummer des Fliessgewässers
+| kantonale Nummer des Fliessgewässers; bei Standgewässer: "- - -"
 | 616-0000
 | öffentlich
 m| Hoehe
@@ -132,19 +63,23 @@ m| rVerantwortlichkeit
 4+| *zusätzliche Attribute des Publikationsmodells*
 m| EGRID
 | eidgenössiche Grundstücksidentifikator
-| todo
+| CH884722407834
 | öffentlich
 m| Grundstuecksnummer
-| todo
-| todo
+| Grundstücksnummer gemäss amtlicher Vermessung
+| 452
 | öffentlich
-m| Gemeinde
-| todo
-| todo
+m| Gemeindenummer
+| Gemeindenummer gemäss Bundesamt für Statistik (BfS)
+| 1367
+| öffentlich
+m| Gemeindename
+| Gemeindename gemäss kantonaler Liste
+| Muotathal
 | öffentlich
 m| Kanton
-| Kantonskürzel gemäss offizieller 
-| todo
+| Kantonskürzel gemäss Bundesamt für Statistik (BfS)
+| SZ
 | öffentlich
 4+| *Geometrie*
 m| Geometrie
@@ -158,12 +93,11 @@ m| Kennung
 |===
 
 ==== Klasse `+Verantwortlichkeit+`
-Die Klasse `+Verantwortlichkeit+` führt die Personen, welche zuständig für die Messdaten der Station zuständig sind.
+Die Klasse `+Verantwortlichkeit+` führt die Personen, welche für die Messdaten der Station zuständig sind.
 
 [cols=4*,options="header"]
 |===
 | Name | Beschreibung | Beispiel | Freigabe
-4+| *Fachattribute*
 m| OID
 | technischer Objektidentifikator
 | ceaa37a9-8614-43fc-9a8b-688f95c30218
@@ -197,7 +131,7 @@ m| Nachname
 | Muster
 | +++<span style="color:red;">intern</span>+++
 m| Strasse
-| Strassenname der Organisation
+| Strassenname des Organisationssitzes
 | Wasserweg
 | öffentlich
 m| Hausnummer
@@ -221,7 +155,7 @@ m| Tel_G
 | +41 41 123 45 67
 | +++<span style="color:red;">intern</span>+++
 m| Tel_M
-| Telefonnummer des Mobilgerätes der zuständigen Person
+| Mobiltelefonnummer der zuständigen Person
 | +41 78 321 65 98
 | +++<span style="color:red;">intern</span>+++
 m| E_Mail
