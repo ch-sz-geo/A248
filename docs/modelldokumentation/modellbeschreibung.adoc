@@ -1,6 +1,6 @@
-== <todo>Modellbeschreibung<todo>
+== Modellbeschreibung
 
-<Beschreibung einfügen>
+Das Thema beinhaltet im Wesentlichen die Standorte von Messstellen, welche Pegel- und Abflussmesswerte erwassen. Es bezieht sich auf einen Teilbereich des Bundesdatensatzes "hydrologische Verhältnisse (weitere Erhebungen)" (ID 136). Die Standorte dienen dazu, die hydrologischen Werte über einen Kartenviewer abzurufen.
 
 ifdef::backend-pdf[]
 <<<
