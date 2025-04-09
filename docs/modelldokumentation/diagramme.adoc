@@ -1,9 +1,12 @@
 == Diagramme
-=== Komponentendiagramm
-image::../img/Komponentendiagramm.jpg[]
+=== Komponentendiagramm Bearbeitungs- und Publikationsmodell
+image::../img/SZ_Messstellen_Hydrometrie_V1_Bearbeitung_Komponentendiagramm.png[]
 
-=== Klassendiagramm
-image::../img/Klassendiagramm.jpg[]
+=== Klassendiagramm Bearbeitungsmodell
+image::../img/SZ_Messstellen_Hydrometrie_V1_Bearbeitung_Klassendiagramm.png[]
+
+=== Klassendiagramm Publikationsmodell
+image::../img/SZ_Messstellen_Hydrometrie_V1_Publikation_Klassendiagramm.png[]
 
 image::../img/Legende Klassendiagramm.png[width=350]
 
