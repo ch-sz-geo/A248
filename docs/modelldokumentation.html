@@ -208,12 +208,7 @@ th {
 </li>
 <li><a href="#_klassenbeschreibung">4. Klassenbeschreibung</a>
 <ul class="sectlevel2">
-<li><a href="#_topic_stammdaten">4.1. Topic <code>Stammdaten</code></a>
-<ul class="sectlevel3">
-<li><a href="#_klasse_katalogeintrag">4.1.1. Klasse <code>Katalogeintrag</code></a></li>
-<li><a href="#_klasse_standard_katalogeintrag">4.1.2. Klasse <code>Standard-Katalogeintrag</code></a></li>
-</ul>
-</li>
+<li><a href="#_topic_stammdaten">4.1. Topic <code>Stammdaten</code></a></li>
 <li><a href="#_topic_fachdaten">4.2. Topic <code>Fachdaten</code></a>
 <ul class="sectlevel3">
 <li><a href="#_klasse_messstation">4.2.1. Klasse <code>Messstation</code></a></li>
@@ -278,7 +273,7 @@ th {
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">letzte Änderung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2025-04-08</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2025-04-09</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Themen-Nummer</p></td>
@@ -484,152 +479,6 @@ Kuno Epper (Kep), AGI</p></td>
 <div class="paragraph">
 <p>Im Unterschied zum Normalfall führt dieses Thema keine Stammdaten.</p>
 </div>
-<div class="sect3">
-<h4 id="_klasse_katalogeintrag"><a class="anchor" href="#_klasse_katalogeintrag"></a><a class="link" href="#_klasse_katalogeintrag">4.1.1. Klasse <code>Katalogeintrag</code></a></h4>
-<div class="paragraph">
-<p>Die Klasse <code>Katalogeintrag</code> enthält die allgemeinen, für alle Kataloge gemeinsamen Attribute. Die Klasse selber ist abstrakt: Es gibt keine Objekte Katalogeintrag, sondern nur Objekte von den spezialisierten Klassen.</p>
-</div>
-<div class="paragraph">
-<p>Spaltenbreite Variante 1:</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 10%;">
-<col style="width: 60%;">
-<col style="width: 20%;">
-<col style="width: 10%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Name</th>
-<th class="tableblock halign-left valign-top">Beschreibung</th>
-<th class="tableblock halign-left valign-top">Beispiel</th>
-<th class="tableblock halign-left valign-top">Freigabe</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">technischer Objektidentifikator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ceaa37a9-8614-43fc-9a8b-688f95c30218</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Code</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Code des Listeneintrages; entspricht in INTERLIS dem Wert der Aufzählung und muss ein gültiger INTERLIS-Name sein (siehe <a href="https://www.interlis.ch/dokumentation">INTERLIS-Referenzhandbuch</a>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">in_Aenderung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bezeichnung des Katalogeintrages, wie er den Nutzenden angezeigt wird</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">in Änderung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SortierNr</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Reihenfolge des Katalogeintrages in der Auswahlliste</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Erläuterung, welche den Katalogeintrag näher beschreibt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dieser Status wird für alle Objekte verwendet, bei denen aktuell eine Nachführung läuft.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Spaltenbreite Variante 2:</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Name</th>
-<th class="tableblock halign-left valign-top">Beschreibung</th>
-<th class="tableblock halign-left valign-top">Beispiel</th>
-<th class="tableblock halign-left valign-top">Freigabe</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">technischer Objektidentifikator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ceaa37a9-8614-43fc-9a8b-688f95c30218</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Code</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Code des Listeneintrages; entspricht in INTERLIS dem Wert der Aufzählung und muss ein gültiger INTERLIS-Name sein (siehe <a href="https://www.interlis.ch/dokumentation">INTERLIS-Referenzhandbuch</a>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">in_Aenderung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bezeichnung des Katalogeintrages, wie er den Nutzenden angezeigt wird</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">in Änderung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SortierNr</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Reihenfolge des Katalogeintrages in der Auswahlliste</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Erläuterung, welche den Katalogeintrag näher beschreibt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dieser Status wird für alle Objekte verwendet, bei denen aktuell eine Nachführung läuft.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_klasse_standard_katalogeintrag"><a class="anchor" href="#_klasse_standard_katalogeintrag"></a><a class="link" href="#_klasse_standard_katalogeintrag">4.1.2. Klasse <code>Standard-Katalogeintrag</code></a></h4>
-<div class="paragraph">
-<p>Die Verbindlichkeit kam mit der Aufnahme der statischen Waldgrenzen in den ÖREB-Kataster. Sie ist eine Spezialisierung der Klasse <code>Katalogeintrag</code>.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Name</th>
-<th class="tableblock halign-left valign-top">Beschreibung</th>
-<th class="tableblock halign-left valign-top">Beispiel</th>
-<th class="tableblock halign-left valign-top">Freigabe</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><em>Diese Klasse führt keine zusätzlichen Attribute</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Anforderungen</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Code</code></p></td>
-<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name</code></p></td>
-<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 <div class="sect2">
 <h3 id="_topic_fachdaten"><a class="anchor" href="#_topic_fachdaten"></a><a class="link" href="#_topic_fachdaten">4.2. Topic <code>Fachdaten</code></a></h3>
@@ -707,7 +556,7 @@ Kuno Epper (Kep), AGI</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Gewaessernummer</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kantonale Nummer des Fliessgewässers</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kantonale Nummer des Fliessgewässers; bei Standgewässer: "- - -"</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">616-0000</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
@@ -738,25 +587,31 @@ Kuno Epper (Kep), AGI</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>EGRID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">eidgenössiche Grundstücksidentifikator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CH884722407834</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Grundstuecksnummer</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Grundstücksnummer gemäss amtlicher Vermessung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">452</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Gemeinde</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Gemeindenummer</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gemeindenummer gemäss Bundesamt für Statistik (BfS)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1367</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Gemeindename</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gemeindename gemäss kantonaler Liste</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Muotathal</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Kanton</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kantonskürzel gemäss offizieller</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kantonskürzel gemäss Bundesamt für Statistik (BfS)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SZ</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
@@ -790,7 +645,7 @@ Kuno Epper (Kep), AGI</p></td>
 <div class="sect3">
 <h4 id="_klasse_verantwortlichkeit"><a class="anchor" href="#_klasse_verantwortlichkeit"></a><a class="link" href="#_klasse_verantwortlichkeit">4.2.2. Klasse <code>Verantwortlichkeit</code></a></h4>
 <div class="paragraph">
-<p>Die Klasse <code>Verantwortlichkeit</code> führt die Personen, welche zuständig für die Messdaten der Station zuständig sind.</p>
+<p>Die Klasse <code>Verantwortlichkeit</code> führt die Personen, welche für die Messdaten der Station zuständig sind.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -808,9 +663,6 @@ Kuno Epper (Kep), AGI</p></td>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Fachattribute</strong></p></td>
-</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>OID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">technischer Objektidentifikator</p></td>
@@ -861,7 +713,7 @@ Kuno Epper (Kep), AGI</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Strasse</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Strassenname der Organisation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Strassenname des Organisationssitzes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Wasserweg</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
@@ -897,7 +749,7 @@ Kuno Epper (Kep), AGI</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Tel_M</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Telefonnummer des Mobilgerätes der zuständigen Person</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mobiltelefonnummer der zuständigen Person</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">+41 78 321 65 98</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
 </tr>
@@ -1289,7 +1141,7 @@ hergeleitet über:<br>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-04-08 14:54:15 UTC
+Last updated 2025-04-09 13:55:00 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
