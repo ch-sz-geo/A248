@@ -1,12 +1,11 @@
-// Hier den Titel eingeben
-:title: Messstellen Hydrometrie (A248)
+:title: <Themenname> (<Themennummer>)
 :subtitle: Modelldokumentation
 ifdef::backend-pdf[]
 = {title}
 {subtitle}
-:title-logo-image: image:../../themes/header_sz_pdf.png[top=-10%,align=center,width=fill]
-:pdf-theme: ../../themes/pdfTheme.yml
-:pdf-fontsdir: fonts/
+// :title-logo-image: image:../../themes/header_sz_pdf.png[top=-10%,align=center,width=fill]
+// :pdf-theme: ../../themes/pdfTheme.yml
+// :pdf-fontsdir: fonts/
 endif::[]
 ifndef::env-github[:toc: left]
 :toc-title: Inhalt
@@ -21,18 +20,20 @@ ifndef::env-github[:toc: left]
 :sectlinks:
 :sectanchors:
 // :includedir: docs
-:stylesheet: ../../themes/stylesheet.css
+// :stylesheet: ../../themes/stylesheet.css
 :doctype: book
 :!chapter-signifier:
 
 // Todo Header Styling und Environment ändern auf Doc. Header auf der Webseite muss auf andere Weise integriert werden
 
 ifndef::env-github,backend-pdf[]
+:myImage: https://ch-sz-geo.github.io/A000_defaultDesign/themes/logo_kt_sz_rgb.jpg
 [.img-logo]
-image:../../themes/logo_kt_sz_rgb.jpg[]
+image:{myImage}[logo kt sz rgb]
 
 = {title}
 [.subtitle]#{subtitle}# +
+
 endif::[]
 
 // Die Verwiese auf die Inhalte der Dokumentation sollen im README auf Github nicht angezeigt werden.
